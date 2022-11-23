@@ -1,0 +1,53 @@
+.phone-input {
+  width: 275px;
+}
+
+.react-tel-input .form-control {
+  border: 1px solid #2c7dfa;
+
+  opacity: 0.1;
+  border-radius: 4px;
+  transition: 0.5s all;
+  &:focus {
+    opacity: 1;
+  }
+  width: inherit;
+  height: 40px;
+  padding-left: 58px;
+}
+
+.react-tel-input .flag-dropdown {
+  background-color: #eaf2ff;
+  border: 1px solid #cfe2ff;
+}
+
+.react-tel-input .selected-flag {
+  width: 45px;
+}
+
+.react-tel-input .selected-flag .arrow {
+  background: url("../../img/arrow.svg") no-repeat;
+  width: 10px;
+  height: 8px;
+  margin: 3px 0px 0 22px;
+  transition: 0.5s all;
+  border: 0;
+  top: 0;
+  left: 0;
+}
+
+.react-tel-input .selected-flag:hover,
+.react-tel-input .selected-flag:focus {
+  transition: 0.5s all;
+  background-color: #eaf2ff;
+}
+
+.react-tel-input .selected-flag .arrow.up {
+  border: 0;
+  transform: rotate(180deg) translateY(3px);
+}
+
+.react-tel-input .ua {
+  background: url("../../img/ua.svg") no-repeat;
+  background-position: 0%;
+}

@@ -1,0 +1,73 @@
+.Dropdown-root {
+  width: 275px;
+  height: 40px;
+  font-weight: 400;
+}
+
+.DropdownElement {
+  width: 45%;
+}
+
+.Dropdown-control,
+.Dropdown-menu {
+  border: 1px solid #eaf2ff;
+  box-shadow: none;
+}
+
+.Dropdown-control {
+  padding: 12px 52px 12px 10px;
+}
+
+.Dropdown-control:hover {
+  box-shadow: none;
+}
+
+.is-open {
+  .Dropdown-control {
+    box-shadow: 0px 8px 16px -4px rgba(24, 39, 75, 0.1),
+      0px 12px 32px -4px rgba(24, 39, 75, 0.1);
+  }
+  .Dropdown-menu {
+    box-shadow: 0px 8px 16px -4px rgba(24, 39, 75, 0.1),
+      0px 12px 32px -4px rgba(24, 39, 75, 0.1);
+  }
+}
+
+.Dropdown-arrow {
+  background: url("../../img/arrow.svg") no-repeat;
+  width: 10px;
+  height: 8px;
+  transition: 0.5s all;
+  border: 0;
+  top: 17px;
+}
+
+.is-open .Dropdown-arrow {
+  transform: rotate(180deg) translateY(3px);
+}
+
+.Dropdown-menu {
+  top: auto;
+}
+
+.DropdownElement.radio {
+  .Dropdown-option {
+    border-bottom: 1px solid #eaf2ff;
+    padding: 14px 40px;
+    background: url("../../img/radio/radio.svg") no-repeat 12px;
+  }
+
+  .Dropdown-option.is-selected {
+    background: url("../../img/radio/radioSelected.svg") no-repeat 12px;
+  }
+}
+
+.DropdownElement {
+  .Dropdown-option {
+    padding: 14px 40px;
+  }
+}
+
+.Dropdown-option:last-child {
+  border-bottom: none;
+}
